@@ -10,8 +10,8 @@
             const jobId = params.get('jobId');     // ID del servidor
 
             if (placeId && jobId) {
-                // Redirige a Roblox usando el Job ID
-                window.location.href = `roblox://placeID?placeId=${placeId}&jobId=${jobId}`;
+                // Redirige a Roblox usando el Job ID (forma correcta)
+                window.location.href = `roblox://placeID/${placeId}/jobID/${jobId}`;
             } else {
                 document.body.textContent = "Error: Missing Place ID or Job ID.";
             }
